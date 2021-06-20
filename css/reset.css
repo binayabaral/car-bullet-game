@@ -1,0 +1,45 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	max-height: 1000000px;
+}
+
+body {
+	margin: 0;
+	color: #000;
+	font: 14px/1.5 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	min-width: 320px;
+	background: #fff;
+}
+
+canvas {
+	border: 1px solid #000;
+	display: block;
+	margin: 30px auto;
+}
+
+.score-display {
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 100px;
+}
+
+.score-display span {
+	display: block;
+	text-align: center;
+}
+
+.score-display.best-score {
+	right: 100px;
+	left: auto;
+}
